@@ -6,7 +6,7 @@ To start the program, open index.html
 
 This will take you to a sign up page.
 Input an email and password.  
-The email must follow a valid email structure, i.e. johnsmith@email.com.
+The email must follow a valid email structure, i.e. johnsmith123@fakeemail.com.
 The password must include a captial letter, number, and special character, as well as being at least 8 characters long.
 Attempting to register with an account already created will  prompt the user that the account already exists.
 
