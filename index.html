@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:#c1bdba" class=" d-flex justify-content-center">
+
+    <div class="card mt-5 rounded-1" style="background-color:#25333E">
+
+        <form class="form">
+
+            <div class="card-body ">
+
+
+                <div class="card-body justify-content-center d-flex" id="mainPage">
+
+
+                    <button class="col-6  border-0 pt-2" type="button" style="background-color: #1AB187; color:white"
+                        class="btn rounded-0 col-4" id="btnSignUp">
+                        <h5>Sign up</h5>
+                    </button>
+
+                    <button class="col-6 border-0 pt-2 " type="button" style="background-color: #425459; color:white"
+                        class="btn rounded-0 col-4" id="btnHaveAnAccount">
+                        <h5>Have an Account?</h5>
+                    </button>
+
+                </div>
+
+                <div class="Dashboard" id="signUpDashboard">
+                    <div class="card-body">
+                        <h3 class="col-12 justify-content-center  d-flex " style="color:white" class="">Sign Up for Free
+                        </h3>
+                        <h5 class="mt-4" style="color:white">Personal Info</h5>
+                        <input class="simplebox " style=" background-color:#25333E; border-color:#a3b3b7; color:white"
+                            type="email" placeholder="user@email.com" id="inputEmail">
+                        <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                            type="password" placeholder="Password" id="inputPassword">
+                        <div>
+                            <input class="mt-1 simplebox"
+                                style="background-color:#25333E; border-color:#a3b3b7; color:white" type="text"
+                                placeholder="First Name" id="inputFirstName">
+                            <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                                type="text" placeholder="Last Name" id="inputLastName">
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+
+
+                        <h5 style="color:white">Home Address</h5>
+
+                        <div class="ms-3">
+                            <h6 style="color:white">Street Info:</h6>
+
+                            <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                                type="text" placeholder="Street" id="inputStreet">
+                            <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                                type="text" placeholder="Street2(Optional)" id="inputStreet2">
+                            <div class="mt-4">
+                                <div>
+                                    <h6 style="color:white">City and State:</h6>
+                                </div>
+                                <input class="simplebox"
+                                    style="background-color:#25333E; border-color:#a3b3b7; color:white" type="text"
+                                    placeholder="City" id="inputCity">
+                                <input class="mt-1 simplebox"
+                                    style="background-color:#25333E; border-color:#a3b3b7; color:white" type="text"
+                                    placeholder="State" id="inputState">
+
+                            </div>
+                        </div>
+                        <div class="ms-3 mt-4">
+                            <div>
+                                <h6 style="color:white">Zip:</h6>
+                            </div>
+                            <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                                type="text" placeholder="ZIP" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="mt-3 card-body d-none" id="divCoopAddress">
+                        <h5 style="color:white">Coop Address</h5>
+                        <div class="ms-3">
+                            <input class="simplebox" style="background-color:#25333E; color:white" type="text"
+                                placeholder="Street" id="coopStreet">
+                            <input class="simplebox" style="background-color:#25333E; color:white" type="text"
+                                placeholder="Street2(Optional)" id="coopStreet2">
+                            <div class="mt-4">
+                                <div>
+                                    <h6 style="color:white">City and State:</h6>
+                                </div>
+                                <input class="mt-1 simplebox" style="background-color:#25333E; color:white" class="mt-1"
+                                    type="text" placeholder="State" id="coopState">
+                                <input class="simplebox" style="background-color:#25333E; color:white" type="text"
+                                    placeholder="City" id="coopCity">
+
+                            </div>
+                        </div>
+                        <div class="ms-3 mt-4">
+                            <div>
+                                <h6 style="color:white">Zip:</h6>
+                            </div>
+                            <input class="simplebox" style="background-color:#25333E; color:white" type="text"
+                                placeholder="ZIP" id="coopZIP">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="card-body ">
+                            <h5 style="color:white">Coop Address</h5>
+                            <div class="form-check">
+                                <input style="accent-color:red" class="form-check-input" type="radio" name="coopRadio"
+                                    id="coopRadio1" checked>
+                                <label style="color:white" class="form-check-label" for="coopRadio1">
+                                    Same as home address
+                                </label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input " type="radio" name="coopRadio" id="coopRadio2">
+                                <label style="color:white" class="form-check-label" for="coopRadio2">
+                                    Different address
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-body col-12 ">
+                        <h5 style="color:white">Coop Code</h5>
+                        <!--<input class="simplebox" style="background-color:#25333E; color:white" type="text"
+                            placeholder="Enter Code" id="inputCoopCode">-->
+
+                    </div>
+                    <button class="col-12 border-0 pt-2" type="button" style="background-color: #1AB187; color:white"
+                        class="btn rounded-0 col-4" id="btnCreateAccount">
+                        <h5>Register</h5>
+                    </button>
+                </div>
+
+                <div class="card-body d-none Dashboard" id="logInDashboard">
+
+
+
+                    <div>
+                        <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                            type="email" placeholder="user@email.com" id="inputLoginEmail">
+                        <input class="simplebox" style="background-color:#25333E; border-color:#a3b3b7; color:white"
+                            type="password" placeholder="Password" id="inputLoginPassword">
+                    </div>
+
+                    <button class="col-12 border-0 pt-2 mt-4" type="button"
+                        style="background-color: #1AB187; color:white" class="btn rounded-0 col-4" id="btnLogin">
+                        <h5>Log in</h5>
+                    </button>
+                    <button class="col-12 border-0 pt-2 mt-2 mb-0" type="button"
+                        style="background-color: #25333E; color: rgb(151, 224, 175);" class="btn rounded-0 col-4"
+                        id="btnForgotPassword">
+                        <h5>Forgot Password?</h5>
+                    </button>
+
+                </div>
+
+                <div class="card-body d-none Dashboard" id="forgotPasswordDashboard">
+
+
+
+                    <div>
+                        <input class="col-12 simplebox"
+                            style="background-color:#25333E; border-color:#a3b3b7; color:white" type="email"
+                            placeholder="user@email.com" id="inputLoginEmail">
+
+                    </div>
+
+                    <button class="col-12 border-0 pt-2 mt-4" type="button"
+                        style="background-color: #1AB187; color:white" class="btn rounded-0 col-4"
+                        id="btnResetPassword">
+                        <h5>Reset Password</h5>
+                    </button>
+                    <button class="col-12 border-0 pt-2 mt-2 mb-0" type="button"
+                        style="background-color: #25333E; color: rgb(151, 224, 175);" class="btn rounded-0 col-4"
+                        id="btnBackToLogin">
+                        <h5>Back to Log in</h5>
+                    </button>
+
+
+                </div>
+
+
+                <div class="card-body d-none Dashboard" id="applicationDashboard">
+
+                    <div class="mb-2">
+                        <button class="btn rounded-0" type="button" style="background-color: #1AB187; color:white"
+                            data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                            <i class="fa-solid fa-bars"></i> Toggle Sidebar
+                        </button>
+                    </div>
+
+
+                    <div class="card-group mb-4" id="divCardRow">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">134</h5>
+                                <p class="card-text" id="pNumEggs"></p>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted">Eggs harvested</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" id="h5CurrentTemperature">70°</h5>
+                                <p class="card-text"></p>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted">Current Temperature</small></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" id="pCurrentHumidity">30%</h5>
+                                <p class="card-text"></p>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted">Current Humidity</small></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" id="pDaysUntilCleanDay">64</h5>
+                                <p class="card-text">Next clean out: 1/15/2023</p>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted">Days until clean up</small></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <canvas id="canvasTempHumidityChart"></canvas>
+                    </div>
+
+
+                </div>
+
+                <div class="offcanvas offcanvas-start" tabindex="1"
+                    style="background-color:#25333E; border-color:#a3b3b7; color:white" id="sidebar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="sideBarLabel">Explore Smart Coop</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            Use the sidebar to view your coop dashboard, settings, warnings, or logout.
+                        </div>
+                        <div class="dropdown mt-3">
+                            <div class="btn-group-vertical col-12">
+
+                                <button class=" btn rounded-0" data-bs-dismiss="offcanvas" type="button"
+                                    style="background-color: #1AB187; color:white" class="btn rounded-0 col-4"
+                                    id="btnSideBarDashboard">
+                                    Dashboard <i class="fa-solid fa-chart-line"></i>
+                                </button>
+                                <button class="btn rounded-0 mt-1" data-bs-dismiss="offcanvas" type="button"
+                                    style="background-color: #1AB187; color:white" class="btn rounded-0 col-4"
+                                    id="btnSideBarSettings">
+                                    Settings <i class="fa-solid fa-gears"></i>
+                                </button>
+                                <button class="btn rounded-0 mt-1" data-bs-dismiss="offcanvas" type="button"
+                                    style="background-color: #1AB187; color:white" class="btn rounded-0 col-4"
+                                    id="btnSideBarWarnings">
+                                    Warnings <i class="fa-solid fa-triangle-exclamation"></i>
+                                </button>
+
+                            </div>
+
+
+                            <div class="fixed-bottom ">
+
+                                <button class="btn sm-col-3 md-col-2 lg-col-1 ms-3 rounded-0 mb-2"
+                                    data-bs-dismiss="offcanvas" type="button"
+                                    style="background-color: #1AB187; color:white" class="btn rounded-0 col-4"
+                                    id="btnSideBarLogout">
+                                    Logout <i class="fa-solid fa-right-from-bracket"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dashboardSettings" class="d-none">
+                    <div class="mb-2">
+                        <button class="btn rounded-0 " type="button" style="background-color: #1AB187; color:white"
+                            data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                            <i class="fa-solid fa-bars"></i> Toggle Sidebar
+                        </button>
+                    </div>
+
+
+                    <div class="card-group mb-4" id="divSettingsDoorAndLight">
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="doorOpenSettingsDiv"
+                                data-setting="doorOpen" data-suffix=" sec" data-value="3">
+                                <h5 class="card-title editableWithAccess" id="txtOpenDoorTime">3 sec</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateOpenDoorTime">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i class="fa-solid fa-door-open"></i>
+                                            Time to Open Coop Door</small></p>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input radioToggle" data-setting="manualDoor" data-value="1"
+                                        type="radio" name="coopDoor" id="coopDoor1" checked>
+                                    <label class="form-check-label" for="coopDoor">
+                                        Manually Open Coop Door
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="doorCloseSettingsDiv"
+                                data-setting="doorClose" data-suffix=" sec" data-value="3">
+                                <h5 class="card-title editableWithAccess" id="txtCloseDoorTime">3 sec</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateCloseDoorTime ">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fa-solid fa-door-closed"></i> Time to Close Coop Door</small></p>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input radioToggle" data-setting="manualDoor" data-value="0"
+                                        type="radio" name="coopDoor" id="coopDoor2">
+                                    <label class="form-check-label" for="coopDoor">
+                                        Manually Close Coop Door
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="lightOnSettingsDiv"
+                                data-setting="lightOn" data-suffix=" sec" data-value="5">
+                                <h5 class="card-title editableWithAccess" id="txtTurnOnLightTime">5 sec</h5>
+                                <btn class="btn btn-primary requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateTurnonLightTime">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i class="fa-solid fa-lightbulb"></i>
+                                            Time to Turn On Coop Light</small></p>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input radioToggle" data-setting="manualLight"
+                                        data-value="1" type="radio" name="coopLight" id="coopLight1" checked>
+                                    <label class="form-check-label" for="coopLight1">
+                                        Manually Turn On Coop Light
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="lightOffSettingsDiv"
+                                data-setting="lightOff" data-suffix=" sec" data-value="5">
+                                <h5 class="card-title editableWithAccess" id="txtTurnOffLightTime">5 sec</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateTurnoffLightTime">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fa-regular fa-lightbulb"></i> Time to Turn Off Coop Light</small>
+                                    </p>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input radioToggle" data-setting="manualLight"
+                                        data-value="0" type="radio" name="coopLight" id="coopLight2">
+                                    <label class="form-check-label" for="coopLight2">
+                                        Manually Turn Off Coop Light
+                                    </label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-group mb-4" id="divSettingsHeaterFanFoodAndWater">
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="heaterTempSettingsDiv"
+                                data-setting="heaterTemp" data-suffix="°" data-value="50">
+                                <h5 class="card-title editableWithAccess" id="txtLowTemp">50°</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateLowestTemp">Update</btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fa-solid fa-temperature-empty"></i> Lowest Temp before heater
+                                            turns on</small></p>
+                                </div>
+
+                                <div class="form-check form-switch formToggle" data-setting="manualHeater">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="coopHeater">
+                                    <label class="form-check-label" for="coopHeater">Manually Turn Heater
+
+                                        On/Off</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="fanTempSettingsDiv"
+                                data-setting="fanTemp" data-suffix="°" data-value="75">
+                                <h5 class="card-title editableWithAccess" id="txtHighTemp">75°</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateHighestTemp">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i
+                                                class="fa-solid fa-temperature-three-quarters"></i> Highest temp before
+                                            fan turns on</small></p>
+                                </div>
+
+                                <div class="form-check form-switch formToggle" data-setting="manualFan" data-value="0">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="coopFan">
+                                    <label class="form-check-label" for="coopFan">Manually Turn Fan
+
+                                        On/Off</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="levelOFWaterSettingsDiv"
+                                data-setting="levelOfWater" data-suffix="%" data-value="20">
+                                <h5 class="card-title editableWithAccess" id="txtLowWaterAlarm">20%</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateLowWaterAlarm">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i class="fa-solid fa-water"></i>
+                                            Remaing water level amount that triggers alarm</small></p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body text-center settingsDiv" id="levelOfFoodSettingsDiv"
+                                data-setting="levelOfFood" data-suffix="%" data-value="15">
+                                <h5 class="card-title editableWithAccess" id="txtLowFoodAlarm">15%</h5>
+                                <btn class="btn requiresAccess d-none settingsButton" type="button"
+                                    style="background-color: #1AB187; color:white" id="btnUpdateLowFoodAlarm">Update
+                                </btn>
+                                <div class="card-footer">
+                                    <p class="card-text"><small class="text-muted"><i class="fa-solid fa-bowl-food"></i>
+                                            Remaining food level amount that triggers alarm</small></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+            <script src="js/lib/jquery-3.6.1.min.js"></script>
+            <script src="js/lib/bootstrap.bundle.min.js"></script>
+            <script src="js/lib/sweetalert2@11.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+                integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://kit.fontawesome.com/1612810c5a.js" crossorigin="anonymous"></script>
+
+            <script>
+
+
+                let boolCoopAddress = null;
+                let blnError = false;
+                let strMessage = '';
+
+                $('#btnSideBarLogout').on('click', function () {
+                    $('#applicationDashboard').slideUp();
+                    $('#signUpDashboard').slideDown();
+                    $('#signUpDashboard').removeClass('d-none');
+                    $('#dashboardSettings').addClass('d-none');
+                    $('#mainPage').removeClass('d-none');
+                    $('#mainPage').slideDown();
+                    $('#dashboardSettings').addClass('d-none');
+                    btnHaveAnAccount.style.backgroundColor = '#425459';
+                    btnSignUp.style.backgroundColor = '#1AB187';
+                })
+
+                $('#btnSideBarWarnings').on('click', function () {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Warning!',
+                        html: 'Heat Wave on Tuesday!'
+                    })
+                })
+
+                $('#btnSideBarDashboard').on('click', function () {
+                    $('#sidbar').slideToggle();
+                    $('#applicationDashboard').slideDown();
+                    $('#dashboardSettings').addClass('d-none');
+                })
+
+                $('#btnSideBarSettings').on('click', function () {
+                    //add settings page
+                    $('#dashboardSettings').removeClass('d-none');
+                    $('#applicationDashboard').slideUp();
+                    const settingsArray = ['doorOpen', 'doorClose', 'lightOn', 'lightOff', 'heaterTemp', 'fanTemp', 'levelOfWater', 'levelOfFood', 'manualDoor', 'manualLight', 'manualHeater', 'manualFan']
+                    let objValues = [];
+                    settingsArray.forEach(function (element) {
+                        objValues = $.getJSON('https://simplecoop.swollenhippo.com/settings.php', { SessionID: sessionStorage.getItem('SimpleSession'), setting: element },)
+                    }
+                    )
+                    if (objValues.length) {
+                        $("#doorOpenSettingsDiv").attr('data-value', objValues.doorOpen)
+                        $("#doorOpenSettingsDiv h5").text = objValues.doorOpen + $("#doorOpenSettingsDiv").attr('data-suffix')
+                        $("#doorCloseSettingsDiv").attr('data-value', objValues.doorClose)
+                        $("#doorCloseSettingsDiv h5").text = objValues.doorClose + $("#doorCloseOnSettingsDiv").attr('data-suffix')
+                        $("#lightOnSettingsDiv").attr('data-value', objValues.lightOn)
+                        $("#lightOneSettingsDiv h5").text = objValues.lightOn + $("#lightOnSettingsDiv").attr('data-suffix')
+                        $("#lightOffSettingsDiv").attr('data-value', objValues.lightOff)
+                        $("#lightOffeSettingsDiv h5").text = objValues.lightOff + $("#lightOffSettingsDiv").attr('data-suffix')
+                        $("#heaterTempSettingsDiv").attr('data-value', objValues.heaterTemp)
+                        $("#heaterTempSettingsDiv h5").text = objValues.heaterTemp + $("#heaterTempSettingsDiv").attr('data-suffix')
+                        $("#fanTempSettingsDiv").attr('data-value', objValues.fanTemp)
+                        $("#fanTempSettingsDiv h5").text = objValues.fanTemp + $("#fanTempSettingsDiv").attr('data-suffix')
+                        $("#levelOfWaterSettingsDiv").attr('data-value', objValues.levelOfWater)
+                        $("#levelOfWaterSettingsDiv h5").text = objValues.levelOfWater + $("#levelOfWaterSettingsDiv").attr('data-suffix')
+                        $("#levelOfFoodSettingsDiv").attr('data-value', objValues.levelOfFood)
+                        $("#levelOfFoodSettingsDiv h5").tex, objValues.levelOfFood + $("#levelOfFoodSettingsDiv").attr('data-suffix')
+
+                        if (objValues.manualDoor == 0) {
+                            $('#coopDoor2').prop('checked', true);
+                        }
+                        if (objValues.manualLight == 0) {
+                            $('#coopLight2').prop('checked', true);
+                        }
+                        if (objValues.manualHeater == 0) {
+                            $('#manualHeater').prop('checked', true);
+                        }
+                        if (objValues.manualFan == 0) {
+                            $('#manualFan').prop('checked', true);
+                        }
+
+                    }
+                })
+                // Don't forget to develop pulling settings on load
+                $('.settingsDiv h5').on('click', function () {
+                    $(this).text($(this).parent().attr('data-value'));
+                })
+                $('.settingsButton').on('click', function () {
+                    let strSetting = $(this).parent().attr('data-setting');
+                    $(this).parent().attr('data-value', $(this).siblings('h5').text());
+                    let strValue = $(this).siblings('h5').text();
+                    $(this).siblings('h5').text(strValue + $(this).parent().attr('data-suffix'));
+                    $.ajax({
+                        type: "PUT",
+                        url: "https://simplecoop.swollenhippo.com/settings.php",
+                        contentType: "application/json",
+                        data: { SessionID: sessionStorage.getItem('SimpleSession'), setting: strSetting, value: strValue },
+                        error: function (result) {
+                            swal.fire({
+                                icon: 'error',
+                                text: 'Error: could not update setting in server'
+                            })
+                        }
+                    })
+                })
+
+                $('.formToggle').on('click', function () {
+                    let intDataVal = 1;
+                    let strSetting = $(this).attr('data-setting');
+                    if ($(this).prop('checked')) {
+                        intDataVal = 0;
+                    }
+                    $.ajax({
+                        type: "PUT",
+                        url: "https://simplecoop.swollenhippo.com/settings.php",
+                        contentType: "application/json",
+                        data: { SessionID: sessionStorage.getItem('SimpleSession'), setting: strSetting, value: intDataVal },
+                        error: function (result) {
+                            swal.fire({
+                                icon: 'error',
+                                text: 'Error: could not update setting in server'
+                            })
+                        }
+                    })
+                })
+                $('#btnBackToLogin').on('click', function () {
+                    $('#forgotPasswordDashboard').addClass('d-none');
+                    $('#logInDashboard').slideDown();
+                    $('#btnSignUp').slideDown();
+                    $('#btnHaveAnAccount').slideDown();
+
+                })
+
+                $('#btnForgotPassword').on('click', function () {
+
+                    $('#forgotPasswordDashboard').removeClass('d-none');
+                    $('#logInDashboard').slideUp();
+
+                    $('#btnSignUp').slideUp();
+                    $('#btnHaveAnAccount').slideUp();
+
+                })
+
+                $('#btnHaveAnAccount').on('click', function () {
+                    btnHaveAnAccount.style.backgroundColor = '#1AB187';
+                    btnSignUp.style.backgroundColor = '#425459';
+
+                    $('#logInDashboard').slideDown();
+                    $('#signUpDashboard').slideUp();
+                    $('#logInDashboard').removeClass('d-none');
+                    $('#forgotPasswordDashboard').addClass('d-none');
+                })
+                $('#btnSignUp').on('click', function () {
+                    btnHaveAnAccount.style.backgroundColor = '#425459';
+                    btnSignUp.style.backgroundColor = '#1AB187';
+                    $('#signUpDashboard').slideDown();
+                    $('#logInDashboard').addClass('d-none');
+                    $('#forgotPasswordDashboard').addClass('d-none');
+                })
+
+                $('#coopRadio1').on('click', function () {
+                    boolCoopAddress = false;
+                    $('#divCoopAddress').slideToggle();
+
+
+
+
+                })
+
+                $('#coopRadio2').on('click', function () {
+                    boolCoopAddress = true;
+                    $('#divCoopAddress').slideDown();
+                    $('#divCoopAddress').removeClass('d-none');
+
+
+                })
+
+                $('#btnLogin').on('click', function () {
+
+                    if ($('#inputLoginEmail').val() < 1 || $('#inputLoginPassword').val() < 1) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Warning!',
+                            html: 'You must enter an Email and Password'
+                        })
+                        return 0;
+                    }
+
+                    $.get('https://simplecoop.swollenhippo.com/users.php', { Email: $('#inputLoginEmail').val() }).done(function (result) {
+
+                        console.log(result);
+                        console.log('In get statement');
+                        let userObj = JSON.parse(result);
+                        console.log(userObj.Outcome);
+
+                        if (userObj.Password == $('#inputLoginPassword').val()) {
+
+                            $.post('https://simplecoop.swollenhippo.com/sessions.php', { Email: $('#inputEmail').val(), Password: $('#inputPassword').val() }).done(function (session) {
+
+                                let objSession = JSON.parse(session);
+                                console.log('second post');
+                                if (objSession.SessionID) {
+
+                                    sessionStorage.setItem('SimpleSession', objSession.SessionID)
+                                    $('#applicationDashboard').slideDown();
+                                    $('#signUpDashboard').addClass('d-none');
+                                    $('#mainPage').addClass('d-none');
+                                    $('#applicationDashboard').removeClass('d-none');
+                                }
+                                // $('#applicationDashboard').slideDown();
+                                // $('#logInDashboard').addClass('d-none');
+                                // $('#mainPage').addClass('d-none');
+                                // $('#applicationDashboard').removeClass('d-none');
+                            })
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Warning!',
+                                html: 'Invalid Username or Password'
+                            })
+                        };
+                    });
+                })
+
+                if (true) { //Validate administrator access here in the future
+                    $('.requiresAccess').removeClass('d-none');
+                    $('.editableWithAccess').attr('contenteditable', true)
+                }
+
+
+
+
+                $('#btnCreateAccount').on('click', function () {
+
+                    $.get('https://simplecoop.swollenhippo.com/users.php', { Email: $('#inputEmail').val() }).done(function (result) {
+
+                        console.log(result);
+                        console.log('In get statement');
+                        let userObj = JSON.parse(result);
+                        console.log(userObj.Outcome);
+
+                        if (userObj) {
+                            console.log('In bln error Account Exists');
+                            blnError = true;
+                            strMessage += '<p> Account Already Exists </p>'
+                        };
+                    });
+
+                    //Verify the users input
+                    if (!(isValidEmail($('#inputEmail').val()))) {
+                        blnError = true;
+                        strMessage += '<p> Please enter a valid email </p>'
+
+                    }
+                    if (!(isValidPassword($('#inputPassword').val()))) {
+                        blnError = true;
+                        strMessage += '<p> Please enter a valid password </p>'
+                    }
+                    if ($('#inputFirstName').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a first name </p>'
+                    }
+                    if ($('#inputLastName').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a last name </p>'
+                    }
+                    if ($('#inputStreet').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a street </p>'
+                    }
+                    if ($('#inputCity').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a city </p>'
+                    }
+                    if ($('#inputState').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a state </p>'
+                    }
+                    if ($('#inputZip').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> Please enter a zip code </p>'
+                    }
+                    /*if ($('#inputCoopCode').val() == '') {
+                        blnError = true;
+                        strMessage += '<p> You must enter a Coop code to register </p>'
+                    }*/
+                    //Verify the users input if the coop has a different address
+                    if (boolCoopAddress == true) {
+
+                        if ($('#coopStreet').val() == '') {
+                            blnError = true;
+                            strMessage += '<p> Please enter a street for the coop </p>'
+                        }
+                        if ($('#coopCity').val() == '') {
+                            blnError = true;
+                            strMessage += '<p> Please enter a city for the coop </p>'
+                        }
+                        if ($('#coopState').val() == '') {
+                            blnError = true;
+                            strMessage += '<p> Please enter a state for the coop </p>'
+                        }
+                        if ($('#coopZip').val() == '') {
+                            blnError = true;
+                            strMessage += '<p> Please enter a zip code for the coop </p>'
+                        }
+
+                    }
+
+                    //Throw an error message if invalid input
+                    if (blnError == true) {
+
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            html: strMessage
+                        })
+                        strMessage = '';
+                        blnError = false;
+
+                    } else {
+
+                        $.post('https://simplecoop.swollenhippo.com/coop.php').done(function (result) {
+
+                            console.log(result);
+                            let coopObj = JSON.parse(result);
+                            console.log(coopObj.CoopID)
+                            let coopID = coopObj.CoopID;
+
+                            if (coopObj.CoopID) {
+
+                                $.post('https://simplecoop.swollenhippo.com/users.php', { Email: $('#inputEmail').val(), Password: $('#inputPassword').val(), FirstName: $('#inputFirstName').val(), LastName: $('#inputLastName').val(), CoopID: coopID }).done(function (result) {
+
+                                    console.log(result);
+
+                                    let userObj = JSON.parse(result);
+                                    console.log(userObj.Outcome);
+
+
+                                    if (userObj.Outcome) {
+
+
+                                        $.post('https://simplecoop.swollenhippo.com/useraddress.php', { Email: $('#inputEmail').val(), Street1: $('#inputStreet').val(), Street2: $('#inputStreet2').val(), City: $('#inputCity').val(), State: $('#inputState').val(), ZIP: $('#inputZip').val() }).done(function (result) {
+
+                                            console.log(result);
+
+                                            let useraddObj = JSON.parse(result);
+                                            console.log(useraddObj.Outcome);
+
+                                            if (useraddObj.Outcome) {
+
+
+                                                $.post('https://simplecoop.swollenhippo.com/sessions.php', { Email: $('#inputEmail').val(), Password: $('#inputPassword').val() }).done(function (session) {
+
+                                                    let objSession = JSON.parse(session);
+                                                    console.log('second post');
+                                                    if (objSession.SessionID) {
+
+                                                        sessionStorage.setItem('SimpleSession', objSession.SessionID)
+                                                        $('#applicationDashboard').slideDown();
+                                                        $('#signUpDashboard').addClass('d-none');
+                                                        $('#mainPage').addClass('d-none');
+                                                        $('#applicationDashboard').removeClass('d-none');
+
+                                                        if (boolCoopAddress == true) {
+
+                                                            $.ajax({
+                                                                type: "PUT",
+                                                                url: "https://simplecoop.swollenhippo.com/coop.php",
+                                                                contentType: "application/json",
+                                                                data: { SessionID: sessionStorage.getItem('SimpleSession'), Street1: $('#coopStreet').val(), Street2: $('#coopStreet2').val(), City: $('#coopCity').val(), State: $('#coopState').val(), ZIP: $('#coopZip').val() },
+                                                                success: function (result) {
+
+                                                                    console.log(result);
+                                                                    let coopaddObj = JSON.parse(result);
+                                                                    console.log(coopaddObj.Outcome);
+                                                                    console.log('coop address updated with different address')
+                                                                },
+
+
+
+                                                                error: function (result) {
+                                                                    swal.fire({
+                                                                        icon: 'error',
+                                                                        text: 'Error: could not update coop address'
+                                                                    })
+                                                                }
+                                                            })
+
+
+
+                                                        } else {
+
+                                                            $.ajax({
+                                                                type: "PUT",
+                                                                url: "https://simplecoop.swollenhippo.com/coop.php",
+                                                                contentType: "application/json",
+                                                                data: { SessionID: sessionStorage.getItem('SimpleSession'), Street1: $('#inputStreet').val(), Street2: $('#inputStreet2').val(), City: $('#inputCity').val(), State: $('#inputState').val(), ZIP: $('#inputZip').val() },
+                                                                success: function (result) {
+
+                                                                    console.log(result);
+                                                                    let coopaddObj = JSON.parse(result);
+                                                                    console.log(coopaddObj.Outcome);
+                                                                    console.log('coop address updated with same address')
+                                                                },
+
+
+
+                                                                error: function (result) {
+                                                                    swal.fire({
+                                                                        icon: 'error',
+                                                                        text: 'Error: could not update coop address'
+                                                                    })
+                                                                }
+                                                            })
+
+
+                                                        }
+
+
+
+                                                    } else {
+
+                                                        swal.fire({
+                                                            icon: 'erorr',
+                                                            Text: 'Creating Session Failed'
+
+                                                        })
+
+
+                                                    }
+
+
+                                                })
+
+
+
+                                            } else {
+
+                                                swal.fire({
+                                                    icon: 'erorr',
+                                                    Text: 'Failed to create address'
+
+                                                })
+
+
+
+                                            }
+
+
+
+
+                                        })
+
+
+
+                                    } else {
+
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'Oops...',
+                                            text: 'Failed Creating User'
+                                        })
+
+                                    }
+
+
+
+
+                                })
+
+
+
+                            } else {
+
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Oops...',
+                                    text: 'Error creating CoopID'
+                                })
+
+
+                            }
+
+
+                        })
+
+
+
+
+
+
+                    }
+
+                })
+
+                //Verifies that password is valid
+                function isValidPassword(strPassword) {
+                    let regPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,64}$/;
+                    return regPassword.test(strPassword);
+                }
+
+                //Verifies that email is valid
+                function isValidEmail(strEmailAddress) {
+                    let regEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+                    return regEmail.test(strEmailAddress);
+                }
+
+
+                //Graph config
+                let d = new Date;
+                let prototypeLabels = [7];
+                let today = d.getDay()
+
+                for (let i = 0; i < 7; i++) {
+                    let previousDay = today - i
+                    if (previousDay < 0) {
+                        previousDay += 7
+                    }
+                    switch (previousDay) {
+                        case 0:
+                            prototypeLabels[i] = 'Sunday';
+                            break;
+                        case 1:
+                            prototypeLabels[i] = 'Monday';
+                            break;
+                        case 2:
+                            prototypeLabels[i] = 'Tuesday';
+                            break;
+                        case 3:
+                            prototypeLabels[i] = 'Wednesday';
+                            break;
+                        case 4:
+                            prototypeLabels[i] = 'Thursday';
+                            break;
+                        case 5:
+                            prototypeLabels[i] = 'Friday';
+                            break;
+                        case 6:
+                            prototypeLabels[i] = 'Saturday';
+                            break;
+                    }
+                }
+                let labels = prototypeLabels;
+                let data1 = [70, 60, 90, 70, 60, 50, 70];
+                let data2 = [40, 23, 55, 25, 15, 25, 30];
+                let data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Temperature',
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: data1,
+                        yAxisID: 'y',
+                    },
+                    {
+                        label: 'Humidity',
+                        backgroundColor: 'rgb(99, 132, 255)',
+                        borderColor: 'rgb(99, 132, 255)',
+                        data: data2,
+                        yAxisID: 'y1',
+
+                    }]
+                };
+
+                let config = {
+                    type: 'line',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false,
+                        },
+                        stacked: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Chart.js Line Chart - Multi Axis'
+                            }
+                        },
+                        scales: {
+                            y: {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                            },
+                            y1: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+
+                                // grid line settings
+                                grid: {
+                                    drawOnChartArea: false, // only want the grid lines for one axis to show up
+                                },
+                            }
+                        }
+                    }
+                }
+                let myChart = new Chart(
+                    $('#canvasTempHumidityChart'),
+                    config
+                );
+
+            </script>
+            <style>
+                .toggle-color {
+                    background-color: #1AB187;
+                }
+
+                button {
+                    /*Modifies all buttons, can change later*/
+                    background: linear-gradient(#0000, rgb(0 0 0/20%)) top/100% 800%;
+                    transition: 250ms;
+                }
+
+                button:hover {
+                    transition: 250ms;
+                    background-position: bottom;
+
+                }
+
+                .customborder {
+                    outline: none !important;
+                    border: 1px solid #a3b3b7;
+                    box-shadow: 0 0 10px #a3b3b7;
+                }
+
+                .simplebox {
+                    outline: none;
+                    border: 1px solid #a3b3b7 !important;
+                    -webkit-box-shadow: none !important;
+                    -moz-box-shadow: none !important;
+                    box-shadow: none !important;
+                }
+
+                .card-img-top {
+                    width: 100%;
+                    height: 25vw;
+                    object-fit: contain;
+                }
+
+                .buttonhover:hover span {
+                    opacity: 80%;
+                }
+
+                .buttonhover:hover span:after {
+                    opacity: 100%
+                }
+            </style>
+</body>
+
+</html>
